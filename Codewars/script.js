@@ -76,3 +76,15 @@ function popElement(arr) {
     arr.pop();
     return arr
 }
+
+
+// Training JS #12: loop statement --for..in and for..of
+
+function giveMeFive(obj) {
+    const myArr = [];
+    for (let key in obj) {
+        if (key.length === 5) myArr.push(key);
+        if (obj[key].length === 5) myArr.push(obj[key])
+    }
+    return myArr;
+}
