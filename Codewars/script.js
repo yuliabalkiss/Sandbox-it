@@ -101,3 +101,30 @@ function whatNumberIsIt(n) {
         default: return "Input number is " + n;
     }
 }
+
+// Training JS #18: Methods of String object--concat() split() and its good friend join()
+
+function splitAndMerge(string, separator) {
+    return string.split(' ').map(element => element.split('').join(separator)).join(' ');
+}
+
+// Training JS #7: if..else and ternary operator
+
+function saleHotdogs(n) {
+    return n * (n < 5 ? 100 : n >= 5 && n < 10 ? 95 : 90);
+}
+
+//Abbreviate a Two Word Name
+
+function abbrevName(name) {
+    let a = name.toUpperCase().split(' ').map(e => e[0]).join('.');
+    return a;
+}
+
+// Thinkful - Logic Drills: Traffic light
+
+function updateLight(current) {
+    return current === 'green' ? 'yellow'
+        : current === 'yellow' ? 'red'
+            : 'green';
+}
