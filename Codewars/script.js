@@ -134,3 +134,10 @@ function updateLight(current) {
 function removeChar(str) {
     return str.slice(1, -1)
 }
+
+
+// Training JS #29: methods of arrayObject-- - concat() and join()
+
+function bigToSmall(arr) {
+    return [].concat(...arr).sort((a, b) => b - a).join('>');
+}
