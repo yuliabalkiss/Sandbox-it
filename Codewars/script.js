@@ -141,3 +141,13 @@ function removeChar(str) {
 function bigToSmall(arr) {
     return [].concat(...arr).sort((a, b) => b - a).join('>');
 }
+
+function countSheeps(arrayOfSheep) {
+    let b = 0
+    for (let i = 0; i < arrayOfSheep.length; i++) {
+        if (arrayOfSheep[i] == true) {
+            b++
+        }
+    }
+    return b
+}
