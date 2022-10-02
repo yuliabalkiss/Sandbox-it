@@ -1,0 +1,1 @@
+let yourArray = [ 'gkdfgkjdf', 3567, true ,false, 'fdlgkfo'] // Change this line
