@@ -177,4 +177,7 @@ function evalObject(value) {
 
 const reverseWords = str => str.split(" ").map(el => el.split("").reverse().join("")).join(" ")
 
+// Is it even?
+
+const testEven = n => n % 2 === 0 ? true : false;
 
