@@ -181,3 +181,16 @@ const reverseWords = str => str.split(" ").map(el => el.split("").reverse().join
 
 const testEven = n => n % 2 === 0 ? true : false;
 
+
+// If you can't sleep, just count sheep!!
+
+var countSheep = function (num) {
+    let a = '';
+    for (let i = 1; i <= num; i++) {
+        a += i + ' sheep...';
+
+    }
+    return a;
+}
+
+
