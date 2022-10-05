@@ -190,5 +190,10 @@ function simpleMultiplication(number) {
     return number % 2 !== 0 ? number * 9 : number * 8;
 }
 
+// Grasshopper - Grade book
 
+function getGrade(s1, s2, s3) {
+    let score = (s1 + s2 + s3) / 3;
+    return score >= 90 ? 'A' : score >= 80 ? 'B' : score >= 70 ? 'C' : score >= 60 ? 'D' : 'F';
+}
 
