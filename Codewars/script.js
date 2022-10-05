@@ -1,5 +1,4 @@
 // Training JS #10: loop statement--for
-
 function pickIt(arr) {
     var odd = [], even = [];
     for (let i = 0; i < arr.length; i++) {
@@ -15,7 +14,6 @@ function pickIt(arr) {
 
 
 // Training JS #11: loop statement --break,continue
-
 function grabDoll(dolls) {
     var bag = [];
     for (let i = 0; i < dolls.length; i++) {
@@ -29,7 +27,6 @@ function grabDoll(dolls) {
 
 
 // Training JS #6: Basic data types--Boolean and conditional statements if..else
-
 function trueOrFalse(val) {
     if (val == false || val == null)
         return 'false';
@@ -38,7 +35,6 @@ function trueOrFalse(val) {
 
 
 // Training JS #5: Basic data types--Object
-
 const obj = {
     name: 'dog',
     legs: 4,
@@ -51,7 +47,6 @@ function animal(obj) {
 
 
 // Training JS #4: Basic data types--Array
-
 function getLength(arr) {
     //return length of arr
 
@@ -79,7 +74,6 @@ function popElement(arr) {
 
 
 // Training JS #12: loop statement --for..in and for..of
-
 function giveMeFive(obj) {
     const myArr = [];
     for (let key in obj) {
@@ -89,8 +83,8 @@ function giveMeFive(obj) {
     return myArr;
 }
 
-// Training JS #13: Number object and its properties
 
+// Training JS #13: Number object and its properties
 function whatNumberIsIt(n) {
     switch (true) {
         case (n == Number.MAX_VALUE): return "Input number is Number.MAX_VALUE";
@@ -102,42 +96,41 @@ function whatNumberIsIt(n) {
     }
 }
 
-// Training JS #18: Methods of String object--concat() split() and its good friend join()
 
+// Training JS #18: Methods of String object--concat() split() and its good friend join()
 function splitAndMerge(string, separator) {
     return string.split(' ').map(element => element.split('').join(separator)).join(' ');
 }
 
-// Training JS #7: if..else and ternary operator
 
+// Training JS #7: if..else and ternary operator
 function saleHotdogs(n) {
     return n * (n < 5 ? 100 : n >= 5 && n < 10 ? 95 : 90);
 }
 
-//Abbreviate a Two Word Name
 
+//Abbreviate a Two Word Name
 function abbrevName(name) {
     let a = name.toUpperCase().split(' ').map(e => e[0]).join('.');
     return a;
 }
 
-// Thinkful - Logic Drills: Traffic light
 
+// Thinkful - Logic Drills: Traffic light
 function updateLight(current) {
     return current === 'green' ? 'yellow'
         : current === 'yellow' ? 'red'
             : 'green';
 }
 
-// Remove First and Last Character
 
+// Remove First and Last Character
 function removeChar(str) {
     return str.slice(1, -1)
 }
 
 
 // Training JS #29: methods of arrayObject-- - concat() and join()
-
 function bigToSmall(arr) {
     return [].concat(...arr).sort((a, b) => b - a).join('>');
 }
@@ -152,9 +145,9 @@ function countSheeps(arrayOfSheep) {
     return b
 }
 
+
+
 // Switch/Case - Bug Fixing #6
-
-
 function evalObject(value) {
     var result = 0;
     switch (value.operation) {
@@ -173,17 +166,16 @@ function evalObject(value) {
     return result;
 }
 
-// Reverse words
 
+// Reverse words
 const reverseWords = str => str.split(" ").map(el => el.split("").reverse().join("")).join(" ")
 
-// Is it even?
 
+// Is it even?
 const testEven = n => n % 2 === 0 ? true : false;
 
 
 // If you can't sleep, just count sheep!!
-
 var countSheep = function (num) {
     let a = '';
     for (let i = 1; i <= num; i++) {
@@ -192,5 +184,11 @@ var countSheep = function (num) {
     }
     return a;
 }
+
+// Simple multiplication
+function simpleMultiplication(number) {
+    return number % 2 !== 0 ? number * 9 : number * 8;
+}
+
 
 
