@@ -1,0 +1,7 @@
+function reverseString(str) {
+ 
+  let a = str.split('').reverse().join('')
+  return a
+}
+
+reverseString("hello");
