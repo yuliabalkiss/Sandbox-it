@@ -197,3 +197,9 @@ function getGrade(s1, s2, s3) {
     return score >= 90 ? 'A' : score >= 80 ? 'B' : score >= 70 ? 'C' : score >= 60 ? 'D' : 'F';
 }
 
+// The Wide-Mouthed frog!
+
+function mouthSize(animal) {
+    return animal.toLowerCase() === 'alligator' ? 'small' : 'wide'
+}
+
