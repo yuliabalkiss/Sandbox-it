@@ -203,3 +203,13 @@ function mouthSize(animal) {
     return animal.toLowerCase() === 'alligator' ? 'small' : 'wide'
 }
 
+// Filling an array (part 1)
+const arr = N => {
+    let newArr = []
+    for (let i = 0; i < N; i++)
+        if (i < N) {
+            newArr.push(i)
+        }
+    return newArr
+}
+
