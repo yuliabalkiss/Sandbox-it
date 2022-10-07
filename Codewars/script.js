@@ -213,3 +213,8 @@ const arr = N => {
     return newArr
 }
 
+function deleteVowels(str) {
+    return str.slice('').map(el => el === 'a' || 'e' || 'o' || 'и' || 'я' || 'ю' || ' ы' || 'э' || 'ё' || 'у').delete()
+
+
+}
