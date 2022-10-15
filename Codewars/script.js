@@ -212,16 +212,22 @@ const arr = N => {
         }
     return newArr
 }
-
+//
 function deleteVowels(str) {
     return str.slice('').map(el => el === 'a' || 'e' || 'o' || 'и' || 'я' || 'ю' || ' ы' || 'э' || 'ё' || 'у').delete()
 
 
 }
+//
+// function howManyDalmatians(numer) {
+//     let dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIONS!!!"]
+//     return (numer <= 10) ? dogs[0] || (numer <= 50) ? dogs[1] || (numer == 101) ? dogs[3] : dogs[2]
+// }
 
-function howManyDalmatians(numer) {
-    let dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIONS!!!"];
-    return (numer <= 10) ? dogs[0] || (numer <= 50) ? dogs[1] || (numer == 101) ? dogs[3] : dogs[2]
+// Regex Failure - Bug Fixing #2
+function filterWords(phrase) {
+    return phrase.replace(/(bad|mean|ugly|horrible|hideous)/gi, 'awesome');
 }
+
 
 
