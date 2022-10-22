@@ -248,3 +248,8 @@ function positiveSum(arr) {
 // Return Negative
 const makeNegative = num => num < 0 ? num : num * (-1);
 
+// Holiday VIII - Duty Free
+function dutyFree(normPrice, discount, hol) {
+    let num = hol / (normPrice * discount / 100)
+    return Math.floor(num)
+}
