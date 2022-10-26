@@ -291,6 +291,15 @@ function findAverage(array) {
 
 }
 
+// getNames()
+
+function getNames(data) {
+    let out = []
+    for (key in data) {
+        out.push(data[key]['name'])
+    }
+    return out
+}
 
 
 
