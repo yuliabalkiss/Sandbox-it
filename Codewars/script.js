@@ -309,3 +309,8 @@ function quotable(name, quote) {
     return `${name} said: "${quote}"`
 }
 
+
+// You Can't Code Under Pressure #1
+const doubleInteger = i => i * 2
+
+
