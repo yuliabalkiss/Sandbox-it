@@ -314,3 +314,9 @@ function quotable(name, quote) {
 const doubleInteger = i => i * 2
 
 
+
+// You only need one - Beginner
+function check(a, x) {
+    return a.includes(x);
+};
+
