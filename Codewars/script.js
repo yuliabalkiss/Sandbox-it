@@ -320,3 +320,9 @@ function check(a, x) {
     return a.includes(x);
 };
 
+
+// Vowel one
+function vowelOne(s) {
+    return s.split('').map(el => el.match(/^[aeiou]/ig) ? 1 : 0).join('')
+}
+
