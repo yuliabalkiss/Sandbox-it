@@ -326,3 +326,8 @@ function vowelOne(s) {
     return s.split('').map(el => el.match(/^[aeiou]/ig) ? 1 : 0).join('')
 }
 
+// Find the Remainder
+
+function remainder(n, m) {
+    return n > m ? n % m : m % n;
+}
