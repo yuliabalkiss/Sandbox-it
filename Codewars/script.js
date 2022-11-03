@@ -331,3 +331,6 @@ function vowelOne(s) {
 function remainder(n, m) {
     return n > m ? n % m : m % n;
 }
+
+// Count Odd Numbers below n
+const oddCount = n => Math.floor(n / 2);
