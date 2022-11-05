@@ -334,3 +334,12 @@ function remainder(n, m) {
 
 // Count Odd Numbers below n
 const oddCount = n => Math.floor(n / 2);
+
+//Count the Monkeys!
+function monkeyCount(n) {
+    let count = [];
+    for (let i = 1; i <= n; i++) {
+        count.push(i);
+    }
+    return count;
+}
