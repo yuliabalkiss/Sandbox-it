@@ -352,3 +352,38 @@ function areYouPlayingBanjo(name) {
         return name + " does not play banjo";
     }
 }
+
+
+// Welcome!
+let countries = {
+    english: 'Welcome',
+    czech: 'Vitejte',
+    danish: 'Velkomst',
+    dutch: 'Welkom',
+    estonian: 'Tere tulemast',
+    finnish: 'Tervetuloa',
+    flemish: 'Welgekomen',
+    french: 'Bienvenue',
+    german: 'Willkommen',
+    irish: 'Failte',
+    italian: 'Benvenuto',
+    latvian: 'Gaidits',
+    lithuanian: 'Laukiamas',
+    polish: 'Witamy',
+    spanish: 'Bienvenido',
+    swedish: 'Valkommen',
+    welsh: 'Croeso'
+}
+function greet(lang) {
+    return countries[lang] || countries['english']
+}
+
+
+function greet(language) {
+    for (let key in countries) {
+        if (key == language) {
+            return countries[key]
+        }
+    }
+    return 'Welcome'
+}
