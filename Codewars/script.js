@@ -387,3 +387,8 @@ function greet(language) {
     }
     return 'Welcome'
 }
+
+
+// Beginner - Reduce but Grow
+
+function grow(x) { return x.reduce((a, b) => a * b) };
