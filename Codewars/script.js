@@ -392,3 +392,17 @@ function greet(language) {
 // Beginner - Reduce but Grow
 
 function grow(x) { return x.reduce((a, b) => a * b) };
+
+//  Largest Elements
+
+function largest(n, xs) {
+    let a = [];
+    let oneNum = [];
+    let b = xs.sort((a, b) => b - a);
+    oneNum = b;
+
+    for (let i = 0; i < n; i++) {
+        a.push(oneNum[i]);
+    }
+    return a.reverse()
+}
