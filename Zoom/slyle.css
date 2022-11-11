@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+ }
+
+ .container{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+    border: 1px solid red;
+ }
+ .header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+ }
+header{
+    background-color: rgba(108, 99, 255, 1);
+    height: 80px;
+    
+}
+
+footer{
+    background-color: rgba(108, 99, 255, 1);
+    height: 80px;
+}
+
+.my-btn {
+    border: 2px solid white;
+    height: 40px;
+width: 120px;
+border-radius: 5px;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+section{
+    padding: 100px 0;
+}
+.main-title {
+    font-weight: 700;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: gray;
+    margin: 100px 0 80px;
+    text-align: center;
+
+}
+.card-title{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+.cards-wrap{
+    display: flex;
+    gap: 15px;
+flex-wrap: wrap;
+}
+.card{
+    background: #FFFFFF;
+border: 2px solid #E6E6E6;
+border-radius: 5px;
+width: 370px;
+padding:  46px 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+flex-grow: 1;
+
+
+}
+.card-img {
+    margin: 40px 0 36px;
+    
+}
+ul {
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+a {
+    text-transform: capitalize;
+    font-weight: 400;
+font-size: 16px;
+text-decoration: none;
+padding: 9px 15px;
+display: flex;
+align-items: center;
+}
+a img {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        padding: 46px 0 50px ;
+    }
+    .main-title {
+        margin-bottom: 46px;
+        font-size: 36px;
+    }
+}
+@media (max-width: 576px) {
+    section{
+        padding-top: 44px;
+        
+    }
+    .main-title{
+        font-size: 28px;
+        margin-bottom: 36px;  
+    }
+}
+
