@@ -413,3 +413,6 @@ function sumStr(a, b) {
     let sum = Number(a) + Number(b);
     return String(sum);
 }
+
+// Function 2 - squaring an argument
+const square = (n) => n * n;
