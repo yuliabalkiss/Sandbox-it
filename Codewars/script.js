@@ -416,3 +416,7 @@ function sumStr(a, b) {
 
 // Function 2 - squaring an argument
 const square = (n) => n * n;
+
+// Super Duper Easy
+const problem = x => typeof x === 'string' ? 'Error' : x * 50 + 6;
+
