@@ -461,3 +461,11 @@ function add(arr) {
 function reverse(str) {
     return str.split('').reverse().join('');
 }
+
+// Failed Filter - Bug Fixing #3
+var FilterNumbers = function (str) {
+
+    let a = str.split('').filter(el => el == 0 ? el.delete : !parseInt(el)).join('');
+
+    return a
+}
