@@ -447,3 +447,17 @@ function switchItUp(number) {
 }
 // ========== Ыecond option =======
 switchItUp = n => ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"][n]
+
+
+// Debug the functions EASY
+
+function multi(arr) {
+    let a = arr.reduce((acc, el) => acc * el)
+    return a
+}
+function add(arr) {
+    return arr.reduce((acc, el) => acc + el)
+}
+function reverse(str) {
+    return str.split('').reverse().join('');
+}
