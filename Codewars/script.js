@@ -389,6 +389,7 @@ function greet(language) {
 }
 
 
+
 // Beginner - Reduce but Grow
 
 function grow(x) { return x.reduce((a, b) => a * b) };
@@ -462,6 +463,7 @@ function reverse(str) {
     return str.split('').reverse().join('');
 }
 
+
 // Failed Filter - Bug Fixing #3
 var FilterNumbers = function (str) {
 
@@ -480,4 +482,10 @@ function yourFutureCareer() {
             return 'BackEnd Developer';
         } else return 'Full-Stack Developer';
     }
+}
+
+
+// Opposite number
+function opposite(number) {
+    return number * -1;
 }
