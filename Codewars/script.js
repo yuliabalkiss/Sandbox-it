@@ -495,3 +495,19 @@ function opposite(number) {
 function solution(str, ending) {
     return str.endsWith(ending)
 }
+
+// Nickname Generator
+function nicknameGenerator(name) {
+    for (let i = 0; i < name.length; i++) {
+        if (name.length <= 3) {
+            return "Error: Name too short"
+        } if (name[2] !== 'a' && name[2] !== 'e' && name[2] !== 'i' && name[2] !== 'o' && name[2] !== 'u') {
+            return name.slice(0, 3)
+
+        } else {
+            return name.slice(0, 4)
+        }
+
+    }
+
+}
