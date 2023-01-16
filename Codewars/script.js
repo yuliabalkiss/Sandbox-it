@@ -511,3 +511,16 @@ function nicknameGenerator(name) {
     }
 
 }
+
+
+// Merge two sorted arrays into one
+function mergeArrays(arr1, arr2) {
+    let newArray = (arr1.concat(arr2));
+    let a = [];
+    for (let value of newArray)
+        if (!a.includes(value)) {
+            a.push(value)
+        }
+
+    return a.sort((a, b) => a - b)
+}
