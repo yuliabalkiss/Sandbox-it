@@ -524,3 +524,16 @@ function mergeArrays(arr1, arr2) {
 
     return a.sort((a, b) => a - b)
 }
+
+// Take an Arrow to the knee, Functionally
+
+// var ArrowFunc = function(arr) {
+//   let a =''
+//   for(let i= 0; i<arr.length; i++){
+//    a +=String.fromCharCode(arr[i])
+//   }
+
+//   return a
+//   }
+
+const ArrowFunc = arr => arr.map(el => String.fromCharCode(el)).join('')
