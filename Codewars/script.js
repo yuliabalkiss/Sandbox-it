@@ -537,3 +537,17 @@ function mergeArrays(arr1, arr2) {
 //   }
 
 const ArrowFunc = arr => arr.map(el => String.fromCharCode(el)).join('')
+
+// Who is the killer?  Сравнение  содержания массивов, если массив1 содержит в себе все элементы массива2, то вернуть ключ
+
+function killer(suspectInfo, dead) {
+    for (let key in suspectInfo) {
+        for (let value in dead) {
+            if (suspectInfo[key].includes(dead[value])) {
+                return String(key);
+            }
+        }
+    }
+}
+
+
